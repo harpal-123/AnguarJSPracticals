@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>AngularJS Optional Parameters Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.min.js"></script>
+    <script src="routeOptionalParameter_1.js"></script>
+</head>
+<body>
+    <h1>AngularJS Optional Parameters Example</h1>
+    <div>
+        <ul>
+            <li><a href="#!/products">All Products</a></li>
+            <li><a href="#!/products?category=Electronics">Electronics</a></li>
+            <li><a href="#!/products?category=Books">Books</a></li>
+            <li><a href="#!/products?sort=asc">Sort by Price (Low to High)</a></li>
+            <li><a href="#!/products?sort=desc">Sort by Price (High to Low)</a></li>
+            <li><a href="#!/products?category=Electronics&sort=asc">Electronics (Low to High)</a></li>
+        </ul>
+    </div>
+    <div ng-view></div>
+</body>
+</html>

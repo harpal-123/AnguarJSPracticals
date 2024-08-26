@@ -1,0 +1,14 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Products List</title>
+</head>
+<body>
+    <h2>Products List</h2>
+    <ul>
+        <li ng-repeat="product in products">
+            <a href="#!/product/{{product.id}}">{{product.name}}</a>
+        </li>
+    </ul>
+</body>
+</html>
